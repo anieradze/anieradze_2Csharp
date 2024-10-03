@@ -14,7 +14,7 @@ List<TaskItem> taskItems = new()
 
 app.MapGet("/tasks", () => Results.Ok(taskItems));
 
-
+// Like the way to ensure data type
 app.MapGet("/task/{id:int}", (int id) =>
 {
     var task = taskItems.SingleOrDefault(t => t.Id == id);
