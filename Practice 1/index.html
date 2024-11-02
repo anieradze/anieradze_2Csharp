@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume with HSL Styling</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         body {
             background-color: hsl(210, 50%, 95%);
@@ -21,24 +20,6 @@
             padding: 20px;
         }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: hsl(210, 70%, 60%);
-            padding: 10px;
-        }
-
-            nav a {
-                margin: 0 15px;
-                color: white;
-                text-decoration: none;
-                font-weight: bold;
-            }
-
-                nav a:hover {
-                    text-decoration: underline;
-                }
-
         section {
             padding: 20px;
         }
@@ -50,29 +31,25 @@
             border-radius: 0;
         }
 
+        a {
+            color: hsl(0, 70%, 50%);
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            a:visited {
+                color: hsl(0, 50%, 40%);
+            }
+
         footer {
             background-color: hsl(210, 80%, 50%);
             color: white;
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th, td {
-            border: 1px solid hsl(210, 40%, 70%);
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: hsl(210, 80%, 60%);
-            color: white;
         }
 
         ul {
@@ -94,27 +71,19 @@
         <p>14-year-old aspiring developer</p>
     </header>
 
-    <nav>
-        <a href="#contact">Contact</a>
-        <a href="#github">GitHub</a>
-        <a href="#interests">Interests</a>
-        <a href="#biography">Biography</a>
-        <a href="#new-section">New Section</a>
-    </nav>
-
     <section>
-        <h2 id="contact">Contact Information</h2>
+        <h2>Contact Information</h2>
         <p><strong>Address:</strong> Georgia, Tbilisi</p>
         <p><strong>Phone Number:</strong> 574091800</p>
         <p>Age: 14</p>
 
-        <h2 id="github">GitHub</h2>
+        <h2>GitHub</h2>
         <p><a href="https://github.com/anieradze/anieradze_2.2CSharp" target="_blank">Visit my GitHub Repository</a></p>
 
         <h3>My Photo</h3>
         <img src="image/myphoto.jpg" alt="Ani Eradze" width="400">
 
-        <h2 id="interests">Interests</h2>
+        <h2>Interests</h2>
         <ul>
             <li>Programming</li>
             <li>Reading books</li>
@@ -122,32 +91,8 @@
             <li>Watching movies and TV</li>
         </ul>
 
-        <h2 id="biography">Biography</h2>
+        <h2>Biography</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur facilisis sit amet enim et ullamcorper. In ultricies arcu nec arcu luctus, sit amet ullamcorper massa venenatis.</p>
-
-        <h2>Skills</h2>
-        <table>
-            <tr>
-                <th>Skill</th>
-                <th>Proficiency</th>
-            </tr>
-            <tr>
-                <td>HTML</td>
-                <td>Intermediate</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>Intermediate</td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td>Beginner</td>
-            </tr>
-            <tr>
-                <td>Python</td>
-                <td>Beginner</td>
-            </tr>
-        </table>goo
 
         <h2>Redirect Notice</h2>
         <p>You will be redirected to <a href="#new-section">the new section</a> shortly.</p>
