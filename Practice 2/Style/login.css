@@ -1,0 +1,44 @@
+﻿body {
+}
+
+#info {
+    width: 55%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#lorem {
+    width: 400px
+}
+
+#right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    float: right;
+    width: 45%;
+    height: 86vh;
+    background-color: #555555;
+}
+
+ul {
+    background-color: #292929;
+    height: 40px;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    text-decoration: none;
+    height: 24px;
+}
