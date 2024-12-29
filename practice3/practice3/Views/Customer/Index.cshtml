@@ -1,0 +1,126 @@
+﻿@model IEnumerable<Practice3.Models.Customer>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.shemkvetiID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.personaliID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.iuridiuli_fizikuri)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gvari)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.saxeli)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.qalaqi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.regioni)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.raioni)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sqesi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.misamarti)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.mobiluri)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.firmis_dasaxeleba)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.mobiluri_direqtoris)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gvari_direqtoris)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sabanko_angarishi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.shemkvetiID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.personaliID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.iuridiuli_fizikuri)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.gvari)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.saxeli)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.qalaqi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.regioni)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.raioni)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.sqesi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.misamarti)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.mobiluri)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.firmis_dasaxeleba)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.mobiluri_direqtoris)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.gvari_direqtoris)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.sabanko_angarishi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.email)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

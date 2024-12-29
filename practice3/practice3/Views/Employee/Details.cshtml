@@ -1,0 +1,120 @@
+﻿@model Practice3.Models.Employee
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.personaliID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.personaliID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.gvari)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.gvari)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.saxeli)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.saxeli)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ganyofileba)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ganyofileba)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.qalaqi)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.qalaqi)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.regioni)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.regioni)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.raioni)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.raioni)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.xelfasi)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.xelfasi)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.asaki)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.asaki)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.staji)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.staji)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.tarigi_dabadebis)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.tarigi_dabadebis)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.sqesi)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.sqesi)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.misamarti_saxlis)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.misamarti_saxlis)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.teleponi_saxlis)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.teleponi_saxlis)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.mobiluri)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.mobiluri)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ierarqia)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ierarqia)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

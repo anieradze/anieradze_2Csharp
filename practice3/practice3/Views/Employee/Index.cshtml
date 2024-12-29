@@ -1,0 +1,132 @@
+﻿@model IEnumerable<Practice3.Models.Employee>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.personaliID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gvari)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.saxeli)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ganyofileba)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.qalaqi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.regioni)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.raioni)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.xelfasi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.asaki)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.staji)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tarigi_dabadebis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sqesi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.misamarti_saxlis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.teleponi_saxlis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.mobiluri)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ierarqia)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.personaliID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.gvari)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.saxeli)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ganyofileba)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.qalaqi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.regioni)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.raioni)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.xelfasi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.asaki)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.staji)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tarigi_dabadebis)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.sqesi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.misamarti_saxlis)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.teleponi_saxlis)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.mobiluri)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ierarqia)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
