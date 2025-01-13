@@ -1,0 +1,115 @@
+﻿@model Practice3.Models.Employee
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Employee</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="personaliID" class="control-label"></label>
+                <input asp-for="personaliID" class="form-control" />
+                <span asp-validation-for="personaliID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="gvari" class="control-label"></label>
+                <input asp-for="gvari" class="form-control" />
+                <span asp-validation-for="gvari" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="saxeli" class="control-label"></label>
+                <input asp-for="saxeli" class="form-control" />
+                <span asp-validation-for="saxeli" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ganyofileba" class="control-label"></label>
+                <input asp-for="ganyofileba" class="form-control" />
+                <span asp-validation-for="ganyofileba" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="qalaqi" class="control-label"></label>
+                <input asp-for="qalaqi" class="form-control" />
+                <span asp-validation-for="qalaqi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="regioni" class="control-label"></label>
+                <input asp-for="regioni" class="form-control" />
+                <span asp-validation-for="regioni" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="raioni" class="control-label"></label>
+                <input asp-for="raioni" class="form-control" />
+                <span asp-validation-for="raioni" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="xelfasi" class="control-label"></label>
+                <input asp-for="xelfasi" class="form-control" />
+                <span asp-validation-for="xelfasi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="asaki" class="control-label"></label>
+                <input asp-for="asaki" class="form-control" />
+                <span asp-validation-for="asaki" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="staji" class="control-label"></label>
+                <input asp-for="staji" class="form-control" />
+                <span asp-validation-for="staji" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tarigi_dabadebis" class="control-label"></label>
+                <input asp-for="tarigi_dabadebis" class="form-control" />
+                <span asp-validation-for="tarigi_dabadebis" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="sqesi" class="control-label"></label>
+                <input asp-for="sqesi" class="form-control" />
+                <span asp-validation-for="sqesi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="misamarti_saxlis" class="control-label"></label>
+                <input asp-for="misamarti_saxlis" class="form-control" />
+                <span asp-validation-for="misamarti_saxlis" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="teleponi_saxlis" class="control-label"></label>
+                <input asp-for="teleponi_saxlis" class="form-control" />
+                <span asp-validation-for="teleponi_saxlis" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="mobiluri" class="control-label"></label>
+                <input asp-for="mobiluri" class="form-control" />
+                <span asp-validation-for="mobiluri" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="email" class="control-label"></label>
+                <input asp-for="email" class="form-control" />
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ierarqia" class="control-label"></label>
+                <input asp-for="ierarqia" class="form-control" />
+                <span asp-validation-for="ierarqia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
