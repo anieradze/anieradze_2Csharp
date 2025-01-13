@@ -1,0 +1,120 @@
+﻿@model IEnumerable<practice_3.Models.Order>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.xelshekrulebaID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.personaliID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.shemkvetiID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gadasaxdeli_l)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gadasaxdeli_d)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gadaxdili_l)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gadaxdili_d)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vali_l)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vali_d)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.kursi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tarigi_dawyebis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tarigi_shesrulebis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tarigi_damtavrebis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.shesruleba)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.visi_mizezit)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.xelshekrulebaID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.personaliID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.shemkvetiID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.gadasaxdeli_l)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.gadasaxdeli_d)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.gadaxdili_l)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.gadaxdili_d)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.vali_l)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.vali_d)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.kursi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tarigi_dawyebis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tarigi_shesrulebis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tarigi_damtavrebis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.shesruleba)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.visi_mizezit)
+            </td>
+            <td>
+                <a> class="btn btn-primary" asp-action = "Details" asp-route-id="@item.xelshekrulebaID">Details</a>
+                <a> class="btn btn-primary" asp-action = "Edit" asp-route-id="@item.xelshekrulebaID">Edit</a>
+                <a> class="btn btn-primary" asp-action = "Delete" asp-route-id="@item.xelshekrulebaID">Delete</a>
+               
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
